@@ -1,0 +1,67 @@
+.design-container {
+    max-width: 1200px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.design-newroom {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+.design-body {
+    min-height: 770px;
+}
+
+.nav-bottom-bar {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    gap: 13px;
+    flex: unset;
+}
+
+.design-tab {
+    background: #392652;
+    border-radius: 8px;
+}
+
+.design-tab .MuiButtonBase-root {
+    min-width: unset;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 10px 16px;
+    flex-grow: 1;
+    flex-basis: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    flex-shrink: unset;
+    cursor: pointer;
+}
+
+.design-tab .MuiTabs-indicator {
+    display: none;
+}
+
+.design-tab .Mui-selected {
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #695B83;
+}
+
+@media screen and (max-width: 900px) {
+    .design-body {
+        flex-direction: column;
+    }
+}

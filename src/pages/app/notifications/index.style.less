@@ -1,0 +1,66 @@
+@import '../../../shared/styles/variable';
+
+.notifications-card {
+  margin-bottom: 30px;
+}
+
+.notifications-listItem {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: @border-radius-base;
+  padding: 8px 20px;
+  // border-bottom: 1px s !important;
+  transition: all 0.2s ease;
+  transform: scale(1);
+
+  & .ant-list-item-meta {
+    align-items: center;
+  }
+
+  & .ant-list-item-meta-avatar {
+    margin-right: 12px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+
+    @media screen and (min-width: @screen-md) {
+      margin-right: 16px;
+
+      [dir='rtl'] & {
+        margin-right: 0;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  & .ant-list-item-meta-title {
+    margin-bottom: 2px;
+
+    & .ant-row {
+      & .title {
+        margin-bottom: 0;
+      }
+
+      & .time {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.unread-notifications {
+  background-color: fade(@primary-color, 10);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px 0 fade(@black, 20);
+}
+
+.notifications-spinner {
+  display: block;
+  margin-top: 20px;
+}
+
+.notifications-load-more-button {
+  display: flex;
+  margin: auto;
+}

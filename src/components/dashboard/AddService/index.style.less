@@ -1,0 +1,108 @@
+@import '../../../shared/styles//variable.less';
+
+.sub-card {
+  background-color: @text-color-white;
+  color: @primary-color;
+
+  & .ant-card-head-title {
+    color: @primary-color;
+  }
+
+  & .ant-card-body {
+    display: flex;
+    flex-direction: column;
+
+    & form {
+      margin-top: auto;
+    }
+  }
+}
+
+.sub-text {
+  margin-bottom: 24px;
+  padding-right: 16px;
+
+  [dir='rtl'] & {
+    padding-right: 0;
+    padding-left: 16px;
+  }
+}
+
+.add-service-form .sub-form-field-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  & .form-field {
+    width: 100%;
+
+    & div {
+      margin: 0;
+    }
+  }
+
+  & .form-btn-field {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media screen and (min-width: @screen-sm) {
+      width: 25%;
+    }
+
+    // [dir='rtl'] & {
+    //   padding-left: 0;
+    //   padding-right: 0;
+
+    //   @media screen and (min-width: @screen-sm) {
+    //     padding-left: 0;
+    //     padding-right: 20px;
+    //   }
+    // }
+  }
+
+  & .phone-input {
+    text-align: left;
+    direction: ltr;
+    width: 100%;
+
+    & .ant-input {
+      text-align: left;
+      padding-left: 10px !important;
+      direction: ltr;
+    }
+  }
+
+  @media screen and (min-width: @screen-sm) {
+    flex-direction: row;
+  }
+}
+
+.add-service-form .form-field.form-field-checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 90px;
+
+  @media screen and (min-width: @screen-sm) {
+    flex-direction: row;
+  }
+}
+
+.sub-input {
+  width: 100%;
+  font-size: @font-size-base;
+  line-height: 1;
+  border-radius: @border-radius-base;
+  background-color: @white;
+  color: @black;
+}
+
+.sub-btn {
+  width: 100%;
+}
+
+.check-code-alert {
+  margin-bottom: 10px;
+}

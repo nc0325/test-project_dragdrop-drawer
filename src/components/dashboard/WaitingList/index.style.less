@@ -1,0 +1,72 @@
+@import '../../../shared/styles/variable';
+
+.doctor-cell {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 8px 20px;
+  border-bottom: 0 none !important;
+}
+
+.doctor-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  margin-right: 16px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 16px;
+  }
+}
+
+.doctor-content {
+  font-size: @font-size-base;
+  color: @text-color-secondary;
+  margin-right: 10px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  & h5 {
+    font-weight: @font-weight-medium;
+    margin-bottom: 2px;
+    color: @text-color;
+    font-size: @font-size-base;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+}
+
+.doctor-action {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  [dir='rtl'] & {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  & .ant-btn {
+    padding: 4px 10px;
+    height: 30px;
+
+    @media screen and (min-width: @screen-xxl) {
+      padding: 7.5px 15px;
+      height: 36px;
+    }
+  }
+}
+
+.top-dr-scrollbar {
+  height: 276px;
+
+  // @media screen and (min-width: @screen-lg) {
+  //   height: 255px;
+  // }
+}

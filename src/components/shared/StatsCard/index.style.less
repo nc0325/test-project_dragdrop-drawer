@@ -1,0 +1,36 @@
+@import '../../../shared/styles/variable.less';
+
+.metrics-stats-card {
+  text-align: center;
+
+  & p {
+    color: @text-color-secondary;
+    margin-bottom: 8px;
+  }
+
+  & h3 {
+    font-weight: @font-weight-medium;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.metrics-stats-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 0 auto 16px;
+  height: 50px;
+  width: 50px;
+
+  @media screen and (min-width: @screen-md) {
+    height: 60px;
+    width: 60px;
+  }
+
+  & > img {
+    width: auto;
+    height: auto;
+  }
+}

@@ -1,0 +1,77 @@
+@import '../../../shared/styles//variable.less';
+
+.sub-card {
+  background-color: @text-color-white;
+  color: @primary-color;
+
+  & .ant-card-head-title {
+    color: @primary-color;
+  }
+
+  & .ant-card-body {
+    display: flex;
+    flex-direction: column;
+
+    & form {
+      margin-top: auto;
+    }
+  }
+}
+
+.sub-text {
+  margin-bottom: 24px;
+  padding-right: 16px;
+
+  [dir='rtl'] & {
+    padding-right: 0;
+    padding-left: 16px;
+  }
+}
+
+.sub-form-field-row {
+  display: flex;
+  align-items: center;
+
+  & .form-field {
+    width: 75%;
+
+    & div {
+      margin: 0;
+    }
+  }
+
+  & .form-btn-field {
+    width: 25%;
+    padding-left: 20px;
+
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.sub-input {
+  width: 100%;
+  font-size: @font-size-base;
+  line-height: 1;
+  border-radius: @border-radius-base;
+  background-color: @white;
+  color: @black;
+}
+
+.sub-btn {
+  width: 100%;
+}
+
+.check-code-alert {
+  margin-bottom: 10px;
+}
+
+.sub-card.add-service-form {
+  max-height: none;
+
+  @media screen and (min-width: @screen-md) {
+    max-height: 120px;
+  }
+}

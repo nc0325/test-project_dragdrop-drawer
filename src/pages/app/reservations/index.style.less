@@ -1,0 +1,168 @@
+@import '../../../shared/styles/variable';
+
+.reservation-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reservation-header-input-view {
+  max-width: 120px;
+
+  @media screen and (min-width: @screen-sm) {
+    max-width: 150px;
+  }
+}
+
+.reservation-header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+
+  [dir='rtl'] & {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+.reservation-header-pagination {
+  display: none;
+  padding-left: 12px;
+  padding-right: 2px;
+
+  @media screen and (min-width: @screen-md) {
+    display: block;
+  }
+
+  [dir='rtl'] & {
+    padding-left: 2px;
+    padding-right: 12px;
+  }
+}
+
+.reservation-footer-pagination {
+  display: block;
+  padding: 10px;
+}
+
+.reservation-table {
+  & .ant-table table {
+    table-layout: auto !important;
+  }
+
+  & .ant-table-thead > tr > th {
+    font-size: 13px;
+    padding: 8px;
+    font-weight: @font-weight-bold;
+    background-color: transparent;
+
+    &:first-child {
+      padding-left: 20px;
+
+      [dir='rtl'] & {
+        padding-left: 8px;
+        padding-right: 20px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+
+    &.reservation-table-actions {
+      text-align: center;
+      background-color: @component-background !important;
+    }
+  }
+
+  & .ant-table-tbody > tr > td {
+    font-size: 13px;
+    padding: 12px 8px;
+
+    &:first-child {
+      padding-left: 20px;
+
+      [dir='rtl'] & {
+        padding-left: 8px;
+        padding-right: 20px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+
+    &.reservation-table-actions {
+      text-align: center;
+      background-color: @component-background !important;
+    }
+  }
+
+  & .badge {
+    padding: 3px 8px;
+    color: @white;
+    background-color: @green-6;
+    width: 45px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    height: 18px;
+    border-radius: 10px;
+    font-size: @font-size-sm;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  }
+}
+
+.order-id {
+  text-decoration: underline;
+  color: @primary-color;
+}
+
+.edit-reservation-form {
+  position: relative;
+
+  & .ant-form-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cr-reservation-info-avatar {
+  font-size: 24px;
+  background-color: @primary-color;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cr-reservation-info-avatar.image-avatar {
+  background-color: transparent;
+}
+
+.edit-customer-form {
+  & .phone-input {
+    text-align: left;
+    direction: ltr;
+    width: 100%;
+
+    & .ant-input {
+      text-align: left;
+      padding-left: 10px !important;
+      direction: ltr;
+    }
+  }
+}

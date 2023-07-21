@@ -1,0 +1,147 @@
+@import '../../../../shared/styles/variable';
+
+.sales-state-card {
+  position: relative;
+
+  & .ant-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sales-state-main {
+  margin-top: auto;
+}
+
+.sales-state-sub-title {
+  text-align: center;
+  color: @text-color-secondary;
+  margin-top: -12px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: @screen-sm) {
+    text-align: left;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
+  }
+}
+
+.react-pie-chart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: @screen-sm) {
+    align-items: flex-start;
+  }
+}
+
+.sales-state-content {
+  width: 100%;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & > div {
+    width: 100%;
+  }
+}
+
+.sales-state-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  @media screen and (min-width: @screen-md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: @screen-xxl) {
+    padding-left: 24px;
+
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: 24px;
+    }
+  }
+
+  & .ant-avatar {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    margin-right: 16px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+    @media screen and (min-width: @screen-xxl) {
+      height: 60px;
+      width: 60px;
+      min-width: 60px;
+    }
+  }
+}
+
+.sales-state-item-content {
+  position: relative;
+  font-size: @font-size-base;
+  color: @text-color-secondary;
+  overflow: hidden;
+  width: calc(100% - 66px);
+
+  @media screen and (min-width: @screen-xxl) {
+    width: calc(100% - 76px);
+  }
+
+  & h3 {
+    display: inline-block;
+    font-weight: @font-weight-medium;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: @heading-color;
+  }
+
+  & p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.stats-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  margin-right: 12px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: @screen-md) {
+    margin-right: 16px;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+  }
+}

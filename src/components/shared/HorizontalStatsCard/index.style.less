@@ -1,0 +1,61 @@
+@import '../../../shared/styles/variable';
+
+.stats-card {
+  border-radius: @card-radius;
+}
+
+.stats-icon {
+  font-size: 30px;
+  @media screen and (min-width: @screen-xxl) {
+    font-size: 40px;
+  }
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+}
+
+.stats-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  background: @primary-color;
+  margin-right: 12px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: @screen-md) {
+    margin-right: 16px;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+  }
+}
+
+.stats-content {
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+
+  h3 {
+    font-weight: @font-weight-medium;
+    font-size: 18px;
+    color: @heading-color;
+    margin-bottom: 0;
+  }
+
+  & P {
+    margin-bottom: 0;
+  }
+}

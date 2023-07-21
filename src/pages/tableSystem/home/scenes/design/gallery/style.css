@@ -1,0 +1,75 @@
+.item-gallery-container {
+    max-width: 340px;
+}
+
+.panel-title {
+    background: #695B83;
+    border-bottom: 1px solid rgba(186, 182, 193, 0.6);
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.panel-title .MuiTypography-root {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.gallery-tab {
+    background: #695B83;
+}
+.gallery-panel {
+    margin-top: 20px;
+}
+
+.gallery-panel .panel-body {
+    padding: 30px;
+    background: rgba(105, 91, 131, 0.7);
+    border-radius: 0px 0px 8px 8px;
+    height: 619px;
+    overflow: auto;
+}
+
+.panel-body::-webkit-scrollbar {
+    width: 18px;
+}
+
+.panel-body::-webkit-scrollbar-track {
+    background: rgba(186, 182, 193, 0.6);
+    border-radius: 100px;
+}
+
+.panel-body::-webkit-scrollbar-thumb {
+    background: rgba(41, 18, 70, 0.75);
+    border-radius: 8px;
+}
+.panel-body::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 18, 70);
+    border-radius: 8px;
+}
+
+.itemgroup-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.gallery-item{
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.itemgroup-body {
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}

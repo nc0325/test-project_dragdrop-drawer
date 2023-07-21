@@ -1,0 +1,17 @@
+.design-board{
+    overflow: auto;
+    border-radius: 8px;
+}
+
+.design-pane{
+    width: 764px;
+    height: 754px;
+    background: rgba(105, 91, 131);
+    position: relative;
+    z-index: 1;
+}
+
+.design-pane .pane-back{
+    width: 100%;
+    height: 100%;
+}

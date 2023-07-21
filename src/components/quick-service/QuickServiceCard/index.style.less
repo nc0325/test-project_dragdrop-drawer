@@ -1,0 +1,133 @@
+@import '../../../shared/styles/variable';
+
+.quick-service-card {
+  position: relative;
+}
+
+.quick-service-row {
+  display: flex;
+  align-items: center;
+}
+
+.quick-service-avatar {
+  padding: 0px !important;
+  height: 46px;
+  width: 46px;
+  min-width: 46px;
+  border-radius: @border-radius-circle;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: @screen-md) {
+    margin-right: 16px;
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+      margin-left: 16px;
+    }
+  }
+
+  @media screen and (min-width: @screen-xxl) {
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+  }
+
+  & > img {
+    display: block;
+    width: auto;
+    height: auto;
+    object-fit: inherit;
+  }
+}
+
+.quick-service-content {
+  position: relative;
+  color: @text-color-secondary;
+  flex: 1;
+
+  & p {
+    margin-bottom: 8px;
+  }
+}
+
+.quick-service-content-title {
+  display: flex;
+  align-items: center;
+
+  & h3 {
+    display: inline-block;
+    font-weight: @font-weight-medium;
+    font-size: 17px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: @screen-xxl) {
+      font-size: 18px;
+    }
+  }
+
+  & span {
+    margin-left: 12px;
+    font-size: @font-size-lg;
+    font-weight: @font-weight-medium;
+
+    [dir='rtl'] & {
+      margin-left: 0;
+      margin-right: 12px;
+    }
+  }
+}
+
+.sub-form-field-row {
+  display: flex;
+  align-items: center;
+
+  & .form-field {
+    width: 75%;
+
+    & div {
+      margin: 0;
+    }
+  }
+
+  & .form-btn-field {
+    width: 25%;
+    padding-left: 20px;
+
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.sub-input {
+  text-align: left;
+  direction: ltr;
+  width: 100%;
+  font-size: @font-size-base;
+  line-height: 1;
+  border-radius: @border-radius-base;
+  background-color: @white;
+  color: @black;
+
+  & .ant-input {
+    text-align: left;
+    padding-left: 10px !important;
+  }
+}
+
+// .quick-service-card .ant-input-number-affix-wrapper-rtl {
+//   direction: ltr;
+// }

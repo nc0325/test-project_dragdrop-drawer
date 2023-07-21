@@ -1,0 +1,40 @@
+@import '../../../shared/styles/variable.less';
+
+.sub-card {
+  background-color: @text-color-white;
+  color: @primary-color;
+
+  & .ant-card-head-title {
+    color: @primary-color;
+  }
+
+  & .ant-card-body {
+    display: flex;
+    flex-direction: column;
+
+    & form {
+      margin-top: auto;
+    }
+  }
+}
+
+.qr-code-card {
+  & .ant-card-body {
+    padding: 0 !important;
+  }
+}
+.qr-code-image {
+  & canvas {
+    direction: ltr;
+    display: flex;
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 10px;
+
+    @media screen and (min-width: @screen-md) {
+      max-width: 130px;
+      max-height: 130px;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import '../../../../../shared/styles/variable';
+@import '../../../../../shared/styles/mixin';
+
+.cr-user-info {
+  width: 100% !important;
+  background-color: transparent;
+  // padding: 10px 12px;
+  min-height: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .transition(all 0.2s ease);
+
+  & .ant-dropdown-link {
+    color: inherit;
+
+    & .anticon {
+      font-size: @font-size-sm;
+    }
+  }
+
+  &.light {
+    & .ant-dropdown-link {
+      color: inherit;
+    }
+
+    & .cr-user-name {
+      color: inherit;
+    }
+  }
+}
+
+.cr-user-info-inner {
+  display: flex;
+  align-items: center;
+}
+
+.cr-user-info-avatar {
+  font-size: 24px;
+  background-color: @primary-color;
+  width: 66px !important;
+  height: 66px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cr-user-info-avatar.image-avatar {
+  background-color: transparent;
+}
+
+.cr-user-info-content {
+  width: calc(100% - 62px);
+  margin-left: 16px;
+  .transition(all 0.2s ease);
+
+  [dir='rtl'] & {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+.cr-user-name-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.cr-user-name {
+  font-size: 24px;
+  font-weight: @font-weight-medium;
+  color: #161d1a !important;
+}
+
+.cr-user-role {
+  margin: 0;
+  color: #818583;
+}
+
+.cr-user-arrow {
+  margin-left: 12px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  [dir='rtl'] & {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  & svg {
+    display: block;
+  }
+}
+
+.cr-user-designation {
+  margin-top: -2px;
+  color: inherit;
+
+  .ant-layout-sider-dark & {
+    color: inherit;
+  }
+}
+
+.dropdown-list {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+  & .ant-list-item {
+    padding: 5px 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(@component-background, 3);
+    }
+  }
+}
+
+.cr-user-info-hasColor {
+  & .ant-dropdown-link {
+    color: inherit;
+  }
+
+  &.light {
+    & .ant-dropdown-link {
+      color: inherit;
+    }
+
+    & .cr-user-name {
+      color: inherit;
+    }
+  }
+
+  & .cr-user-designation {
+    color: inherit;
+
+    .ant-layout-sider-dark & {
+      color: inherit;
+    }
+  }
+
+  & .cr-user-name {
+    color: inherit;
+
+    &.light {
+      color: inherit;
+    }
+  }
+}

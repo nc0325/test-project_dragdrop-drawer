@@ -1,0 +1,94 @@
+@import '../../../../../shared/styles/variable';
+
+.profile-connection {
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.profile-connection-title {
+  font-size: @font-size-lg;
+  font-weight: @font-weight-bold;
+  margin-bottom: 16px;
+}
+
+.member-item {
+  position: relative;
+  height: 100%;
+  padding-bottom: 16px;
+}
+
+.member-card {
+  border: @border-style-base @border-width-base @border-color-base;
+  border-radius: @border-radius-base;
+}
+
+.member-card-title {
+  font-size: @font-size-sm;
+  font-weight: @font-weight-bold;
+  margin-bottom: 16px;
+  color: @text-color-secondary;
+}
+
+.member-info {
+  display: flex;
+}
+
+.member-thumb {
+  margin-right: 12px;
+
+  [dir='rtl'] & {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+
+  & .ant-avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.member-info-content {
+  flex: 1;
+
+  & h5 {
+    font-weight: @font-weight-medium;
+    font-size: @font-size-base;
+    margin-bottom: 10px;
+  }
+
+  & .ant-btn {
+    font-size: @font-size-sm;
+    height: 30px;
+    padding: 3.5px 12px;
+  }
+
+  & .ant-btn.foodics-btn {
+    background-color: #5830c5;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #5830c5;
+      border-color: #5830c5;
+    }
+  }
+}
+
+.disconnect-btn {
+  background-color: fade(@secondary-color, 10);
+  color: @secondary-color;
+  border-color: fade(@secondary-color, 10);
+
+  &:hover,
+  &:focus {
+    background-color: fade(@secondary-color, 20);
+    color: @secondary-color;
+    border-color: fade(@secondary-color, 20);
+  }
+}

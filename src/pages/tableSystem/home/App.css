@@ -1,0 +1,164 @@
+.ant-tabs-left>.ant-tabs-content-holder,
+.ant-tabs-left>div>.ant-tabs-content-holder {
+    border-left: 0px solid #f0f0f0;
+    margin-left: 0px;
+}
+
+.ant-tabs-left>.ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-left>div>.ant-tabs-nav .ant-tabs-ink-bar {
+    display: none;
+}
+
+.home-container {
+    font-family: 'Futura';
+    display: flex;
+    margin-top: 68px;
+}
+
+.home-topbar {
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #110534;
+}
+
+.home-body {
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+    margin: auto;
+}
+.home-logo {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+}
+.home-closebtn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.home-closebtn:hover {
+    transition: all 1s;
+    background-color: #ffffff20;
+}
+
+.home-closebtn:active {
+    background-color: #aaaaaa20;
+}
+
+.home-tab-group{
+    position: relative;
+    padding: 20px 0px 40px 0px;
+    gap: 44px;
+}
+
+.home-tab-group .MuiButtonBase-root{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 17px 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 234px;
+    width: 100%;
+}
+
+.home-tab-group .MuiButtonBase-root:hover{
+    color: #e40f73;
+}
+
+.home-tab-group .Mui-selected {
+    background-color: #120536;
+    color: #D9D9D9;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.home-tab-group .MuiTabs-indicator{
+    display: none;
+}
+
+.home-menu-bar {
+    width: 240px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    padding: 120px 0px 60px 20px;
+    gap: 44px;
+    background: #31274F;
+    height: 100%;
+}
+
+
+.home-btn-newReservation {
+    user-select: none;
+    cursor: pointer;
+    max-width: 200px;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    padding: 12px 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.home-btn-newReservation:hover {
+    transition: all 1s;
+    background-color: #ffffff20;
+}
+
+.home-btn-newReservation:active {
+    transition: all 1s;
+    background-color: #aaaaaa20;
+}
+
+.home-btn-live {
+    user-select: none;
+    cursor: pointer;
+    max-width: 200px;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #98C98F;
+
+    padding: 12px 20px;
+    border: 4px solid #98C98F;
+    border-radius: 8px;
+}
+
+.home-btn-live:hover {
+    transition: all 1s;
+    background-color: #98C98F;
+    color: #FFFFFF;
+}
+
+.home-btn-live:active {
+    transition: all 1s;
+    background-color: #68B96F;
+    color: #FFFFFF;
+}
